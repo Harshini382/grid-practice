@@ -1,0 +1,15 @@
+
+Question 4: Convert px to rem
+
+Base font size = 16px
+
+Formula:
+rem = px / 16
+
+1. 8px / 16 = 0.5rem
+
+2. 24px / 16 = 1.5rem
+
+3. 32px / 16 = 2rem
+
+4. 40px / 16 = 2.5rem
