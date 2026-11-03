@@ -38,6 +38,10 @@ Q2-admin-dashboard/
 └── README.md
 ```
 
+## Git Practice
+
+This project includes a GitHub web editor update pulled into the local repository.
+
 ## Author
 
 Created as part of Level 4 Corporate CSS Grid Practice.
