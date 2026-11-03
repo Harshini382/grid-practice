@@ -319,7 +319,38 @@ a {
 .copyright {
     font-size: 0.85rem;
 }
+/* Improved contact section */
 
+.contact {
+    background: #eaf6ff;
+    padding: 7rem 8%;
+}
+
+.contact-content {
+    max-width: 45rem;
+    margin: auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem #00000010;
+}
+
+/* Improved footer */
+
+.footer {
+    background: #0b1220;
+    padding: 4rem 8%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
 
 /* =========================
    BREAKPOINT 1: TABLET
