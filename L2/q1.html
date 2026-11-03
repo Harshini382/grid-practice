@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level 2 - Question 1</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 10px;
+        }
+
+        .sidebar {
+            background-color: lightblue;
+            padding: 20px;
+            height: 400px;
+        }
+
+        .main {
+            background-color: lightgreen;
+            padding: 20px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Sidebar and Main Layout</h2>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Width: 250px</p>
+        </div>
+
+        <div class="main">
+            <h3>Main Content</h3>
+            <p>This area takes the remaining available space (1fr).</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
