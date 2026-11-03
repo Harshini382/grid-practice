@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Life Magazine</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ef;
+            color: #222;
+            padding: 20px;
+        }
+
+        /* Main Magazine Layout */
+        .magazine {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+
+            grid-template-columns: 2fr 1fr 1fr;
+
+            grid-template-areas:
+                "headline headline headline"
+                "feature feature ad"
+                "feature feature article1"
+                "article2 article3 article1";
+        }
+
+        /* Headline */
+        .headline {
+            grid-area: headline;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 3px solid #222;
+        }
+
+        .headline h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            letter-spacing: 3px;
+        }
+
+        .headline p {
+            margin-top: 8px;
+            color: #777;
+        }
+
+        /* Feature Story */
+        .feature {
+            grid-area: feature;
+            background: white;
+            overflow: hidden;
+        }
+
+        .feature img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .feature-content {
+            padding: 20px;
+        }
+
+        .feature-content h2 {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        /* Articles */
+        .article {
+            background: white;
+            overflow: hidden;
+        }
+
+        .article img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article h3 {
+            font-family: Georgia, serif;
+            font-size: 19px;
+            margin: 8px 0;
+        }
+
+        .article p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .article1 {
+            grid-area: article1;
+        }
+
+        .article2 {
+            grid-area: article2;
+        }
+
+        .article3 {
+            grid-area: article3;
+        }
+
+        /* Category */
+        .category {
+            color: #c0392b;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Advertisement */
+        .ad {
+            grid-area: ad;
+            background: #e8e1d6;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+
+        .ad img {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            margin: 15px 0;
+        }
+
+        .ad h3 {
+            font-size: 20px;
+        }
+
+        /* Tablet Layout */
+        @media (max-width: 900px) and (min-width: 701px) {
+            .magazine {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "headline headline"
+                    "feature feature"
+                    "article1 ad"
+                    "article2 article3";
+            }
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            .magazine {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "headline"
+                    "feature"
+                    "article1"
+                    "article2"
+                    "article3"
+                    "ad";
+            }
+
+            .headline {
+                padding: 20px 10px;
+            }
+
+            .headline h1 {
+                font-size: 30px;
+            }
+
+            .feature img {
+                height: 230px;
+            }
+
+            .feature-content h2 {
+                font-size: 24px;
+            }
+
+            .article img {
+                height: 220px;
+            }
+
+            .ad img {
+                max-height: 220px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="magazine">
+
+        <!-- Magazine Headline -->
+        <header class="headline">
+            <h1>URBAN LIFE</h1>
+            <p>Fashion • Travel • Lifestyle • Technology</p>
+        </header>
+
+        <!-- Feature Story -->
+        <section class="feature">
+
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200"
+                alt="Beautiful mountain landscape">
+
+            <div class="feature-content">
+                <span class="category">Featured Story</span>
+
+                <h2>Discover the Beauty of Traveling</h2>
+
+                <p>
+                    Travel is more than visiting new places.
+                    It is about discovering cultures, meeting
+                    people and creating unforgettable memories.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Article 1 -->
+        <article class="article article1">
+
+            <img
+                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600"
+                alt="Fashion clothing">
+
+            <div class="article-content">
+                <span class="category">Fashion</span>
+
+                <h3>Latest Fashion Trends of 2026</h3>
+
+                <p>
+                    Explore modern styles and discover
+                    the latest fashion inspiration.
+                </p>
+            </div>
+
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article article2">
+
+            <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600"
+                alt="People working with technology">
+
+            <div class="article-content">
+                <span class="category">Technology</span>
+
+                <h3>How Technology Is Changing Our Lives</h3>
+
+                <p>
+                    Discover how innovation is shaping
+                    the future of everyday life.
+                </p>
+            </div>
+
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article article3">
+
+            <img
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600"
+                alt="Healthy food">
+
+            <div class="article-content">
+                <span class="category">Lifestyle</span>
+
+                <h3>Simple Ways to Live a Healthy Life</h3>
+
+                <p>
+                    Small lifestyle changes can make
+                    a big difference to your health.
+                </p>
+            </div>
+
+        </article>
+
+        <!-- Advertisement -->
+        <aside class="ad">
+
+            <span>ADVERTISEMENT</span>
+
+            <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                alt="Red sports shoe advertisement">
+
+            <h3>Step Into Style</h3>
+
+            <p>Discover your next favorite sneakers.</p>
+
+        </aside>
+
+    </main>
+
+</body>
+</html>
