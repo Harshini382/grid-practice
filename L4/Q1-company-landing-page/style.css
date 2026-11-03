@@ -223,6 +223,17 @@ a {
     font-weight: bold;
 }
 
+.service-card {
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.8rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 
 /* =========================
    TESTIMONIALS
@@ -256,6 +267,17 @@ a {
 .testimonial-card span {
     color: #0284c7;
     font-size: 0.85rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 13rem;
 }
 
 
