@@ -14,3 +14,4 @@ Edited this README directly on GitHub and pulled the changes locally.
 Practiced resolving a rejected Git push.
 
 # Technologies Used: HTML5, CSS3, CSS Grid, Flexbox and Git.
+- Q8: Practiced resolving rejected Git pushes.
