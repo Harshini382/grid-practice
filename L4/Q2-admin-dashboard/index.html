@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <h2>Admin<span>Pro.</span></h2>
+        <div class="profile">
+            <span>Welcome, Admin</span>
+            <div class="avatar">A</div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h3>MENU</h3>
+            <a href="#">Dashboard</a>
+            <a href="#">Analytics</a>
+            <a href="#">Customers</a>
+            <a href="#">Orders</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main class="main-content">
+
+            <h1>Dashboard Overview</h1>
+            <p class="subtitle">Welcome back! Here's what's happening today.</p>
+
+            <section class="stats-grid">
+
+                <article class="stat-card">
+                    <h3>Total Revenue</h3>
+                    <p>$45,250</p>
+                    <span>+12.5% this month</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Total Orders</h3>
+                    <p>1,245</p>
+                    <span>+8.2% this month</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Total Customers</h3>
+                    <p>8,540</p>
+                    <span>+15.3% this month</span>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Pending Orders</h3>
+                    <p>125</p>
+                    <span>Needs attention</span>
+                </article>
+
+            </section>
+
+            <section class="charts-grid">
+
+                <article class="chart-card">
+                    <h2>Revenue Overview</h2>
+                    <div class="chart revenue-chart">
+                        <div class="bar" style="height:40%"></div>
+                        <div class="bar" style="height:65%"></div>
+                        <div class="bar" style="height:50%"></div>
+                        <div class="bar" style="height:85%"></div>
+                        <div class="bar" style="height:70%"></div>
+                        <div class="bar" style="height:95%"></div>
+                    </div>
+                    <div class="chart-labels">
+                        <span>Jan</span><span>Feb</span><span>Mar</span>
+                        <span>Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                </article>
+
+                <article class="chart-card">
+                    <h2>Customer Growth</h2>
+                    <div class="growth-content">
+                        <div class="circle-chart">
+                            <span>78%</span>
+                        </div>
+                        <p>Customer growth this quarter</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="table-card">
+
+                <h2>Recent Orders</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>John Smith</td>
+                                <td>Laptop</td>
+                                <td>$1200</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1002</td>
+                                <td>Sarah Wilson</td>
+                                <td>Phone</td>
+                                <td>$800</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1003</td>
+                                <td>Michael Brown</td>
+                                <td>Headphones</td>
+                                <td>$150</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1004</td>
+                                <td>Emily Davis</td>
+                                <td>Smartwatch</td>
+                                <td>$250</td>
+                                <td><span class="status cancelled">Cancelled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
